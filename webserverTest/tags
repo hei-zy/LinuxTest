@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+FILE_SIZE	myhttp.c	/^#define FILE_SIZE /;"	d	file:
+MAX_SIZE	myhttp.c	/^#define MAX_SIZE /;"	d	file:
+disconnect	myhttp.c	/^void disconnect(int cfd, int epfd)$/;"	f	typeref:typename:void
+do_accept	myhttp.c	/^void do_accept(int lfd, int epfd)$/;"	f	typeref:typename:void
+do_read	myhttp.c	/^void do_read(int cfd, int epfd)$/;"	f	typeref:typename:void
+epoll_run	myhttp.c	/^void epoll_run(int port)$/;"	f	typeref:typename:void
+get_line	getline.c	/^int get_line(int cfd, char *buf, int size)$/;"	f	typeref:typename:int
+get_line	myhttp.c	/^int get_line(int cfd, char *buf, int size)$/;"	f	typeref:typename:int
+http_request	myhttp.c	/^void http_request(int cfd, const char *file)$/;"	f	typeref:typename:void
+init_listen_fd	myhttp.c	/^int init_listen_fd(int port, int epfd)$/;"	f	typeref:typename:int
+main	myhttp.c	/^int main(int argc,char*argv[])$/;"	f	typeref:typename:int
+send_file	myhttp.c	/^void send_file(int cfd, const char* file)$/;"	f	typeref:typename:void
+send_respond	myhttp.c	/^void send_respond(int cfd, int num, char *disp, char *type, int len)$/;"	f	typeref:typename:void

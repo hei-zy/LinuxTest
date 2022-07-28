@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+BUFLEN	./epollReactor2.c	/^#define BUFLEN /;"	d	file:
+MAX_EVENTS	./epollReactor.c	/^#define MAX_EVENTS /;"	d	file:
+MAX_EVENTS	./epollReactor2.c	/^#define MAX_EVENTS /;"	d	file:
+SERVPORT	./client.c	/^#define SERVPORT /;"	d	file:
+SERVPORT	./server.c	/^#define SERVPORT /;"	d	file:
+SERV_PORT	./epollReactor.c	/^#define SERV_PORT /;"	d	file:
+SERV_PORT	./epollReactor2.c	/^#define SERV_PORT /;"	d	file:
+SERV_PORT	./epollServer.c	/^#define SERV_PORT /;"	d	file:
+SERV_PORT	./epollServerET.c	/^#define SERV_PORT /;"	d	file:
+SERV_PORT	./selectServer.c	/^#define SERV_PORT /;"	d	file:
+SRV_PORT	./mulProcessServer.c	/^#define SRV_PORT /;"	d	file:
+SRV_PORT	./mulThreadServer.c	/^#define SRV_PORT /;"	d	file:
+__anon918dfd47010a	./endianMode.c	/^    {$/;"	u	function:byteOrder	file:
+acceptconn	./epollReactor.c	/^void acceptconn(int lfd, int events, void *arg)$/;"	f	typeref:typename:void
+acceptconn	./epollReactor2.c	/^void acceptconn(int lfd,int events,void *arg)$/;"	f	typeref:typename:void
+arg	./epollReactor.c	/^    void *arg;          \/\/指向自己结构体的指针$/;"	m	struct:myevent_s	typeref:typename:void *	file:
+arg	./epollReactor2.c	/^    void *arg;          \/\/指向自己结构体指针$/;"	m	struct:myevent_s	typeref:typename:void *	file:
+buf	./epollReactor.c	/^    char buf[BUFSIZ];$/;"	m	struct:myevent_s	typeref:typename:char[]	file:
+buf	./epollReactor2.c	/^    char buf[BUFLEN];   $/;"	m	struct:myevent_s	typeref:typename:char[]	file:
+byteOrder	./endianMode.c	/^void byteOrder()$/;"	f	typeref:typename:void
+call_back	./epollReactor.c	/^    void (*call_back)(int fd, int events, void *arg);   \/\/回调函数$/;"	m	struct:myevent_s	typeref:typename:void (*)(int fd,int events,void * arg)	file:
+call_back	./epollReactor2.c	/^    void (*call_back)(int fd,int events,void *arg); \/\/回调函数$/;"	m	struct:myevent_s	typeref:typename:void (*)(int fd,int events,void * arg)	file:
+catchChild	./mulProcessServer.c	/^void catchChild(int signum)$/;"	f	typeref:typename:void
+cfd	./mulThreadServer.c	/^    int cfd;$/;"	m	struct:s_info	typeref:typename:int	file:
+cltAddr	./mulThreadServer.c	/^    struct sockaddr_in cltAddr;$/;"	m	struct:s_info	typeref:struct:sockaddr_in	file:
+doWork	./mulThreadServer.c	/^void *doWork(void*arg)$/;"	f	typeref:typename:void *
+eventadd	./epollReactor.c	/^void eventadd(int efd, int events, struct myevent_s *ev)$/;"	f	typeref:typename:void
+eventadd	./epollReactor2.c	/^void eventadd(int efd, int events, struct myevent_s *ev)$/;"	f	typeref:typename:void
+eventdel	./epollReactor.c	/^void eventdel(int efd, struct myevent_s *ev)$/;"	f	typeref:typename:void
+eventdel	./epollReactor2.c	/^void eventdel(int efd,struct myevent_s *ev)$/;"	f	typeref:typename:void
+events	./epollReactor.c	/^    int events;         \/\/对应监听事件$/;"	m	struct:myevent_s	typeref:typename:int	file:
+events	./epollReactor2.c	/^    int events;         \/\/对应的监听事件，EPOLLIN和EPLLOUT$/;"	m	struct:myevent_s	typeref:typename:int	file:
+eventset	./epollReactor.c	/^void eventset(struct myevent_s *ev, int fd, void(*call_back)(int fd, int events, void *arg), voi/;"	f	typeref:typename:void
+eventset	./epollReactor2.c	/^void eventset(struct myevent_s *ev, int fd, void (*call_back)(int fd,int events,void *arg), void/;"	f	typeref:typename:void
+fd	./epollReactor.c	/^    int fd;             \/\/要监听的文件描述符$/;"	m	struct:myevent_s	typeref:typename:int	file:
+fd	./epollReactor2.c	/^    int fd;             \/\/要监听的文件描述符$/;"	m	struct:myevent_s	typeref:typename:int	file:
+g_efd	./epollReactor.c	/^int g_efd;      \/\/全局变量，红黑树的根$/;"	v	typeref:typename:int
+g_efd	./epollReactor2.c	/^int g_efd;      \/\/全局变量，作为红黑树根$/;"	v	typeref:typename:int
+g_events	./epollReactor.c	/^struct myevent_s g_events[MAX_EVENTS + 1];      \/\/自定义结构体类型数组。+1-->listen/;"	v	typeref:struct:myevent_s[]
+g_events	./epollReactor2.c	/^struct myevent_s g_events[MAX_EVENTS+1];    \/\/自定义结构体类型数组. +1-->listen fd$/;"	v	typeref:struct:myevent_s[]
+handle_term	./backlog.c	/^static void handle_term(int sig)$/;"	f	typeref:typename:void	file:
+initlistensocket	./epollReactor.c	/^void initlistensocket(int efd, short port)$/;"	f	typeref:typename:void
+initlistensocket	./epollReactor2.c	/^void initlistensocket(int efd, short port)$/;"	f	typeref:typename:void
+last_active	./epollReactor.c	/^    long last_active;   \/\/记录每次加入红黑树g_efd的时间$/;"	m	struct:myevent_s	typeref:typename:long	file:
+last_active	./epollReactor2.c	/^    long last_active;   \/\/记录每次加入红黑树 g_efd 的时间值$/;"	m	struct:myevent_s	typeref:typename:long	file:
+len	./epollReactor.c	/^    int len;$/;"	m	struct:myevent_s	typeref:typename:int	file:
+len	./epollReactor2.c	/^    int len;$/;"	m	struct:myevent_s	typeref:typename:int	file:
+main	./backlog.c	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	./client.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./endianMode.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./epollReactor.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./epollReactor2.c	/^int main()$/;"	f	typeref:typename:int
+main	./epollServer.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./epollServerET.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./mulProcessServer.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./mulThreadServer.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./selectServer.c	/^int main(int argc, char*argv[])$/;"	f	typeref:typename:int
+main	./server.c	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+myevent_s	./epollReactor.c	/^struct myevent_s$/;"	s	file:
+myevent_s	./epollReactor2.c	/^struct myevent_s$/;"	s	file:
+perrExit	./epollServer.c	/^void perrExit(const char*str)$/;"	f	typeref:typename:void
+perrExit	./epollServerET.c	/^void perrExit(const char*str)$/;"	f	typeref:typename:void
+perrExit	./selectServer.c	/^void perrExit(const char*str)$/;"	f	typeref:typename:void
+recvdata	./epollReactor.c	/^void recvdata(int fd, int events, void *arg)$/;"	f	typeref:typename:void
+recvdata	./epollReactor2.c	/^void recvdata(int fd, int events, void *arg)$/;"	f	typeref:typename:void
+s_info	./mulThreadServer.c	/^struct s_info$/;"	s	file:
+senddata	./epollReactor.c	/^void senddata(int fd, int events, void *arg)$/;"	f	typeref:typename:void
+senddata	./epollReactor2.c	/^void senddata(int fd, int events, void *arg)$/;"	f	typeref:typename:void
+setnonblock	./epollReactor.c	/^int setnonblock(int fd)$/;"	f	typeref:typename:int
+setnonblocking	./epollServerET.c	/^int setnonblocking(int fd)$/;"	f	typeref:typename:int
+status	./epollReactor.c	/^    int status;         \/\/是否在监听：1->在红黑树上(在监听)，0->不在红黑树/;"	m	struct:myevent_s	typeref:typename:int	file:
+status	./epollReactor2.c	/^    int status;         \/\/是否在监听:1->在红黑树上(监听), 0->不在(不监听)$/;"	m	struct:myevent_s	typeref:typename:int	file:
+stop	./backlog.c	/^static int stop = 0;$/;"	v	typeref:typename:int	file:
+strErr	./mulProcessServer.c	/^void strErr(const char*str)$/;"	f	typeref:typename:void
+strErr	./mulThreadServer.c	/^void strErr(const char*str)$/;"	f	typeref:typename:void
+sysErr	./server.c	/^void sysErr(const char*str)$/;"	f	typeref:typename:void
+sys_err	./client.c	/^void sys_err(const char*str)$/;"	f	typeref:typename:void
+unionBytes	./endianMode.c	/^        char unionBytes[sizeof(short)];$/;"	m	union:byteOrder::__anon918dfd47010a	typeref:typename:char[]	file:
+val	./endianMode.c	/^        short val;$/;"	m	union:byteOrder::__anon918dfd47010a	typeref:typename:short	file:
